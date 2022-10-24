@@ -1,0 +1,49 @@
+.content-login {
+  display: flex;
+  flex-direction: row;
+
+  min-height: 100vh;
+  width: 100vw;
+
+  background-color: #515a5a;
+}
+
+.side-image {
+  background-color: white;
+  flex: 1;
+  background-image: url("../../assets/taskPin.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  max-width: 50vw;
+  min-height: 50vh;
+}
+
+.side-login {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  max-width: 50vw;
+  min-height: 50vh;
+}
+
+.form-login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.text-login {
+  color: white;
+  font-size: 54px;
+  margin-bottom: 48px;
+}
+
+.signUp a {
+  text-decoration: none;
+  color: white;
+}
