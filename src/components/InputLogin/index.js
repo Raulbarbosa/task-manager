@@ -1,6 +1,12 @@
 import "./styles.css";
 
-export default function Example({ name, type, value, placeholder, handler }) {
+export default function InputLogin({
+  name,
+  type,
+  value,
+  placeholder,
+  handler,
+}) {
   return (
     <input
       required="required"

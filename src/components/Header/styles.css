@@ -1,0 +1,30 @@
+.header {
+    width: 100vw;
+    height: 10vh;
+
+    background-color: #85c1e9;
+
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 32px;
+}
+
+.header-options {
+
+    width: 16vw;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-options img:hover {
+    cursor: pointer;
+}
