@@ -1,8 +1,9 @@
-import { Navigate, Outlet, Route, Routes } from "react-router-dom";
+import { Navigate, Outlet, Route, Routes, useNavigate } from "react-router-dom";
 import { getItem } from "./utils/storage";
 import Dashboard from "./pages/Dashboard";
 import SignIn from "./pages/SignIn";
 import SignUp from "./pages/SignUp";
+import { useEffect } from "react";
 
 function ProtectedRoutes({ redirectTo }) {
   const isAuth = getItem("token");
@@ -10,7 +11,16 @@ function ProtectedRoutes({ redirectTo }) {
   return isAuth ? <Outlet /> : <Navigate to={redirectTo} />;
 }
 
+
 function AllRoutes() {
+
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    if (window.location.pathname === "/") {
+      navigate('/sign-in');
+    }
+  }, [])
   return (
     <div className="container-main">
       <Routes>

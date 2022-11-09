@@ -1,0 +1,28 @@
+.content-signup {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+
+    min-height: 100vh;
+    width: 100vw;
+
+    background-color: black;
+}
+
+.side-signup {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    /* max-width: 50vw; */
+    min-height: 50vh;
+}
+
+.form-signup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 12px;
+}

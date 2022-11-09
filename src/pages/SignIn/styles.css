@@ -1,26 +1,12 @@
 .content-login {
   display: flex;
   flex-direction: row;
+  position: relative;
 
   min-height: 100vh;
   width: 100vw;
 
   background-color: black;
-}
-
-.side-image {
-  background-color: white;
-  display: flex;
-  flex-grow: 2;
-  /* background-image: url("../../assets/taskPin.png"), linear-gradient(to right, transparent, mistyrose); */
-  background-image: linear-gradient(to right, transparent, rgba(17, 20, 25, 0.1), black), url("../../assets/taskPin.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-
-  /* max-width: 50vw; */
-  min-height: 50vh;
-
-
 }
 
 .side-login {
@@ -41,10 +27,22 @@
   margin-bottom: 12px;
 }
 
-.text-login {
-  color: white;
-  font-size: 54px;
-  margin-bottom: 48px;
+.password-login-area {
+  display: flex;
+  flex-direction: row;
+
+  position: relative;
+}
+
+.miss-password {
+  position: absolute;
+
+  color: #1F8DED;
+  text-decoration: none;
+
+  font-size: 12px;
+  right: 0px;
+  top: 4px;
 }
 
 .signUp a {

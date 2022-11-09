@@ -1,5 +1,5 @@
 import "./styles.css";
 
-export default function Button({ name }) {
+export default function CustomButton({ name }) {
   return <button className="btn">{name ? name : "TESTE"}</button>;
 }
